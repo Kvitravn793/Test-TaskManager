@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Умный менеджер задач</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Умный менеджер задач</h1>
+    
+    <div class="task-input-container">
+        <input type="text" class="task-input" placeholder="Введите новую задачу...">
+        <input type="date" class="due-date-input">
+        <input type="time" class="due-time-input" value="12:00">
+        <button class="add-btn">Добавить задачу</button>
+    </div>
+    
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">Все</button>
+        <button class="filter-btn" data-filter="active">Активные</button>
+        <button class="filter-btn" data-filter="completed">Выполненные</button>
+        <button class="filter-btn" data-filter="overdue">Просроченные</button>
+        <div class="filter-date-container">
+            <input type="date" class="filter-date-input">
+            <button class="apply-filter-btn">Фильтр по дате</button>
+        </div>
+    </div>
+    
+    <div id="tasks-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
